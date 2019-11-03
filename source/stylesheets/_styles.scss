@@ -1,4 +1,7 @@
 $background-color: #FFF;
+$burgundy: #800020;
+$lighter-burgundy: #bb002f;
+$darker-burgundy: #450011;
 
 body {
   width: 600px;
@@ -12,6 +15,11 @@ h1, h2, h3, h4, h5, h6 {
 header#page-header {
   #logo {
     height: 50px;
+
+    #left-kidney {
+      fill: $burgundy;
+    }
+
     svg {
       height: 100%;
       fill: #000;
@@ -38,6 +46,18 @@ main {
 p {
   font-size: 12pt;
   font-family: Georgia, serif;
+}
+
+a {
+  color: $lighter-burgundy;
+
+  &:visited {
+    color: $darker-burgundy;
+  }
+
+  &.chronological-link:visited {
+    color: $lighter-burgundy;
+  }
 }
 
 .article-list-item {
@@ -73,6 +93,8 @@ p {
 }
 
 footer {
+  font-family: Georgia, serif;
+
   section {
     margin: 20px 0;
   }
