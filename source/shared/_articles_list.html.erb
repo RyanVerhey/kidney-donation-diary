@@ -1,5 +1,6 @@
 <%
-  articles = page_articles
+  chronological ||= false
+  articles = chronological ? page_articles.reverse : page_articles
 %>
 
 <% articles.each_with_index do |article, i| %>
