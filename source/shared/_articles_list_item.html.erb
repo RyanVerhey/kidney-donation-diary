@@ -1,4 +1,11 @@
 <div class="article-list-item">
-  <h3><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h3>
-  <p><%= article.summary(250) %></p>
+  <div class="article-title">
+    <h3><%= link_to article.title, article %></h3>
+    <span><%= article.date.strftime('%B %e, %Y') %></span>
+  </div>
+  <div class="article-summary">
+    <%= article.summary(100) %>
+    <div class="gradient"></div>
+  </div>
+  <hr/>
 </div>
