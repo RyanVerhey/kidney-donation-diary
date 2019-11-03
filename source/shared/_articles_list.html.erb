@@ -1,0 +1,7 @@
+<%
+  articles = page_articles
+%>
+
+<% articles.each_with_index do |article, i| %>
+  <%= partial 'shared/articles_list_item', locals: { article: article } %>
+<% end %>
