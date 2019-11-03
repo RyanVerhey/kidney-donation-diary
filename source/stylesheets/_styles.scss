@@ -17,6 +17,19 @@ header#page-header {
   }
 }
 
+header#article-header {
+  font-family: Raleway, sans-serif;
+  h1 {
+    margin: 0;
+  }
+}
+
+main {
+  hr {
+    margin: 20px 0;
+  }
+}
+
 p {
   font-family: Georgia, serif;
 }

@@ -3,7 +3,7 @@
     <header id="article-header">
       <h1><%= current_article.title %></h1>
       <div class="date">
-        <%= current_article.date.strftime('%b %e') %>
+        <%= current_article.date.strftime('%B %e, %Y') %>
       </div>
     </header>
     <%= yield %>

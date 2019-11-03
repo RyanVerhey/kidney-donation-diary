@@ -6,15 +6,10 @@
   <body>
     <%= partial 'shared/top' %>
     <main>
+      <hr/>
       <%= yield %>
+      <hr/>
     </main>
-    <footer>
-      <section id="contact">
-        If you want to reach out for (alomst) any reason, feel free to email me at <a href="mailto:ryan@kidneydonationdiary.com">ryan@kidneydonationdiary.com</a>
-      </section>
-      <section id="copyright">
-        &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://ryanverhey.com" target='_blank'>Ryan Verhey</a>
-      </section>
-    </footer>
+    <%= partial 'shared/footer' %>
   </body>
 </html>
