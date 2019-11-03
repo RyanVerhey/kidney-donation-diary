@@ -2,6 +2,9 @@
   <article>
     <header id="article-header">
       <h1><%= current_article.title %></h1>
+      <div class="date">
+        <%= current_article.date.strftime('%b %e') %>
+      </div>
     </header>
     <%= yield %>
   </article>
