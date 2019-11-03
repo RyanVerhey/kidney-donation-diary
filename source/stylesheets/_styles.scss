@@ -1,0 +1,18 @@
+body {
+  width: 600px;
+  margin: 10px auto 0 auto;
+}
+
+header {
+  #logo {
+    height: 50px;
+    svg {
+      height: 100%;
+      fill: #000;
+    }
+  }
+}
+
+p {
+  font-family: Georgia, serif;
+}
