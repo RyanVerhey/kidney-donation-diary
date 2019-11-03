@@ -2,4 +2,9 @@
 layout: layout
 ---
 
+<p>
+  <%= link_to 'Click here to view articles in the order they were published.', 'index.html' %>
+</p>
+
+
 <%= partial 'shared/articles_list', locals: { chronological: true } %>
