@@ -30,4 +30,4 @@ A week later the hospital called and said the social worker approved me, so I wa
 
 So, now you're completely up to speed on where I am in the kidney donation process. If all goes well with my tests tomorrow, the hospital will contact me again about next steps. When that happens, I will you all on what my next step is.
 
-Thanks again for joining me on this journey. If for any reason you feel like reaching out, feel free to email me at EMAIL. Have a great day!
+Thanks again for joining me on this journey. If for any reason you feel like reaching out, feel free to email me at [ryan@kidneydonationdiary.com](mailto:ryan@kidneydonationdiary.com). Have a great day!

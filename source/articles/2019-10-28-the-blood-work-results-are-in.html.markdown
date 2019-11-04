@@ -8,8 +8,9 @@ I got a call today from the hospital about the results of my blood and urine tes
 The hospital also discussed the next steps with me. I’ll need to actually go in to the hospital to do more tests, instead of doing them remotely like I had before. But, these tests could potentially be the last round of tests before they approve me as a donor if everything still looks good. These tests will need to be done over 2 days, so I’ll have to make the drive there to do the tests. I’ve spoken with my boss and some of my coworkers, and thankfully everyone is being very supportive of this process, so I can take the days off I need to do the tests.
 
 Over those 2 days, I will be doing the following:
+
 - More blood work
-- An EKG (electrocardiogram) MAYBE INSERT LINK TO WIKIPEDIA?
+- [An EKG \(electrocardiogram\)](https://en.wikipedia.org/wiki/Electrocardiography)
 - A chest X-ray
 - Meeting with donor coordinators
 - Meeting with the social worker
@@ -17,7 +18,7 @@ Over those 2 days, I will be doing the following:
 - Meeting with Transplant Psychology (because I don’t know the recipient personally)
 - See a nephrologist (kidney doctor)
 - Meet with the Transplant Infectious Disease team (because I’ve spent more than 2 consecutive weeks outside of the US)
-- Have a CTA/CT scan done INSERT LINK HERE
+- [Have a CTA/CT scan done](https://en.wikipedia.org/wiki/CT_scan)
 - And more blood work
 
 It’s going to be a busy few days. All this is scheduled for next week, so it’s all happening very fast.
