@@ -8,4 +8,9 @@
     </header>
     <%= yield %>
   </article>
+  <section>
+    <hr/>
+    <h2>Recent Articles:</h2>
+    <%= partial 'shared/articles_list', locals: { only_recent: true, with_title: false } %>
+  </section>
 <% end %>

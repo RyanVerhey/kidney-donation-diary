@@ -1,10 +1,17 @@
 <%
-  chronological ||= false
-  articles = chronological ? page_articles.reverse : page_articles
+  chronological = false unless defined?(chronological)
+  with_title = true unless defined?(with_title)
+  only_recent = false unless defined?(only_recent)
+
+  articles = blog.articles
+  articles = articles.first(3) if only_recent
+  articles = articles.reverse if chronological
 %>
 
 <div id="articles-list">
-  <h2>Entries:</h2>
+  <% if with_title %>
+    <h2>Entries:</h2>
+  <% end %>
   <% articles.each_with_index do |article, i| %>
     <%= partial 'shared/articles_list_item', locals: { article: article } %>
   <% end %>
