@@ -4,8 +4,7 @@ $lighter-burgundy: #bb002f;
 $darker-burgundy: #450011;
 
 body {
-  width: 600px;
-  margin: 10px auto 0 auto;
+  padding: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,14 +13,11 @@ h1, h2, h3, h4, h5, h6 {
 
 header#page-header {
   #logo {
-    height: 50px;
-
     #left-kidney {
       fill: $burgundy;
     }
 
     svg {
-      height: 100%;
       fill: #000;
     }
   }
@@ -92,10 +88,40 @@ a {
   // }
 }
 
+article img {
+  float: none;
+  display: block;
+  margin: 10px auto;
+  width: 90%;
+}
+
 footer {
   font-family: Georgia, serif;
 
   section {
     margin: 20px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 600px;
+    margin: 10px auto 0 auto;
+  }
+
+  header#page-header {
+    #logo {
+      height: 50px;
+
+      svg {
+        height: 100%;
+      }
+    }
+  }
+
+  article img {
+    width: 30%;
+    float: right;
+    margin: 0 0 5px 5px;
   }
 }
