@@ -20,7 +20,7 @@ A few weeks later, I get a call from the hospital and they told me the first rou
 
 It took a few months for them to get back to me. When they did, they said I was the only one of the pool of potential donors they wanted to move forward with, and wanted to confirm that I was still interested in donating. That was big news; out of maybe 10 potential donors that all applied to donate their kidneys to this girl, the blood tests showed that I was the best match. I felt excited, but also nervous. It was a lot of pressure; I was essentially this girl's biggest hope of a normal life. But I felt determined to continue through the process.
 
-Since those last blood tests and getting this call, my wife and I moved out of state, about a 5 hour drive from the hospital. I told them this, and they said it was no big deal, most of the following tests I could do remotely.
+Since those last blood tests and getting this call, my wife and I moved out of state, about a 3-4 hour drive from the hospital. I told them this, and they said it was no big deal, most of the following tests I could do remotely.
 
 I was told the next step was attending a more in-depth information session about being a living organ donor, but since I was out-of-state I could read through the presentation on my own. Then, the next step was talking to a social worker, who would to a psychological evaluation. If the social worker deemed me to be in good shape mentally, I could move on to more tests.
 
