@@ -54,11 +54,13 @@ page "/feed.xml", layout: false
 # end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def find_article_by_title(title)
+    blog.articles.find do |article|
+      article.title.downcase.match title.downcase
+    end
+  end
+end
 
 # Build-specific configuration
 configure :build do
