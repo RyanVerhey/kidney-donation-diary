@@ -2,6 +2,10 @@ $background-color: #FFF;
 $burgundy: #800020;
 $lighter-burgundy: #bb002f;
 $darker-burgundy: #450011;
+$even-lighter-burgundy: #db0037;
+
+$link-color: $lighter-burgundy;
+$visited-link-color: $darker-burgundy;
 
 body {
   padding: 10px;
@@ -45,14 +49,14 @@ p {
 }
 
 a {
-  color: $lighter-burgundy;
+  color: $link-color;
 
   &:visited {
-    color: $darker-burgundy;
+    color: $visited-link-color;
   }
 
   &.chronological-link:visited {
-    color: $lighter-burgundy;
+    color: $link-color;
   }
 }
 
@@ -123,5 +127,32 @@ footer {
     width: 30%;
     float: right;
     margin: 0 0 5px 5px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  $link-color: $even-lighter-burgundy;
+  $visited-link-color: $lighter-burgundy;
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  main a, footer a {
+    color: $link-color;
+    font-weight: bold;
+    &:visited {
+      color: $visited-link-color;
+    }
+
+    &.chronological-link:visited {
+      color: $link-color;
+    }
+  }
+
+  svg {
+    #kidney-donation-diary {
+      fill: white;
+    }
   }
 }
