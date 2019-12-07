@@ -70,3 +70,12 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+activate :deploy do |deploy|
+  deploy.deploy_method   = :sftp
+  deploy.host            = 'kidneydonationdiary.com'
+  deploy.port            = 22
+  deploy.path            = '/home/kdd_user/kidneydonationdiary.com'
+  deploy.user            = ENV['KDD_DEPLOY_USER']
+  deploy.password        = ENV['KDD_DEPLOY_PASS']
+end

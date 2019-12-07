@@ -70,8 +70,15 @@ GEM
       servolux
       tilt (~> 2.0.9)
       uglifier (~> 3.0)
+    middleman-deploy (2.0.0.pre.alpha)
+      middleman-core (>= 3.2)
+      net-sftp
+      ptools
     mini_portile2 (2.4.0)
     minitest (5.12.2)
+    net-sftp (2.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (5.2.0)
     nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
     padrino-helpers (0.13.3.4)
@@ -81,6 +88,7 @@ GEM
     padrino-support (0.13.3.4)
       activesupport (>= 3.1)
     parallel (1.18.0)
+    ptools (1.3.5)
     public_suffix (4.0.1)
     rack (2.0.7)
     rb-fsevent (0.10.3)
@@ -106,10 +114,11 @@ DEPENDENCIES
   builder (~> 3.0)
   middleman (~> 4.1)
   middleman-blog
+  middleman-deploy (~> 2.0.0.pre.alpha)
   nokogiri
   redcarpet (~> 3.3, >= 3.3.3)
   tzinfo-data
   wdm (~> 0.1.0)
 
 BUNDLED WITH
-   1.17.1
+   1.17.3
