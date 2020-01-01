@@ -4,7 +4,7 @@
   only_recent = false unless defined?(only_recent)
 
   articles = blog.articles
-  articles = articles.first(3) if only_recent
+  articles = articles.reject { |a| a == current_article }.first(3) if only_recent && current_article
   articles = articles.reverse if chronological
 %>
 
