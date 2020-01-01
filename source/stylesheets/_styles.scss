@@ -35,6 +35,11 @@ header#article-header {
   .date {
     font-weight: bold;
   }
+
+  #previous-next-article-links {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
 }
 
 main {
@@ -128,6 +133,14 @@ footer {
     float: right;
     margin: 0 0 5px 5px;
   }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
 
 @media (prefers-color-scheme: dark) {

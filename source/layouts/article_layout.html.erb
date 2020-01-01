@@ -1,6 +1,7 @@
 <% wrap_layout :layout do %>
   <article>
     <header id="article-header">
+      <%= partial 'shared/next_previous_article_links' %>
       <h1><%= current_article.title %></h1>
       <div class="date">
         <%= current_article.date.strftime('%B %e, %Y') %>
@@ -8,6 +9,9 @@
     </header>
     <%= yield %>
   </article>
+  <section>
+    <%= partial 'shared/next_previous_article_links' %>
+  </section>
   <section>
     <hr/>
     <h2>Recent Articles:</h2>

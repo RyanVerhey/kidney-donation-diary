@@ -1,0 +1,13 @@
+<div id="previous-next-article-links">
+  &nbsp;
+  <% if current_article != blog.articles.last %>
+    <div class="left">
+      <%= link_to "&lt; Next Oldest Article", current_article.previous_article %>
+    </div>
+  <% end %>
+  <% if current_article != blog.articles.first %>
+    <div class="right">
+      <%= link_to "Next Newest Article &gt;", current_article.next_article %>
+    </div>
+  <% end %>
+</div>
