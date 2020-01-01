@@ -1,0 +1,10 @@
+---
+title: Surgery Postponed
+date: 2020-01-01
+---
+
+Unfortunately, we had to postpone the surgery. The morning of my pre-op appointment I had a little tickle in my throat, which I mentioned to the staff and my surgeon, and they said if I was sick and my symptoms got worse, to call them so they could reschedule the surgery. Well, unfortunately things did get a bit worse so after talking with the hospital this morning, they decided to postpone just in case.
+
+I think I might have a mild chest cold. It feels a bit itchy in my throat and chest, and I have a little nasal congestion. I definitely have something, even though it’s mild. However, it’s not good to have surgery while with a respiratory infection. It can lead to complications with anaesthesia (including increased risk of pneumonia and hernias), as well as running the risk of passing whatever it is to the recipient, who is already on immmune-system-suppressing drugs. So, for my safety as well as the safety of the recipient, the hospital decided to postpone the surgery. Unfortunately, because it’s a holiday, there is no one at the hospital to schedule a new date for the surgery yet, so I need to call them tomorrow to figure it all out. Once I have a new date, I’ll make sure to update here. So, for now, we’re in a holding pattern.
+
+I feel bad for having to postpone the surgery, especially one this important for another person. The recipient will have to go a little longer without a kidney, and that really sucks. It’s also annoying because a lot of people made plans around this date, like my wife is taking time off of work to help me so now she has to take more time off, my parents who flew across the country to be with me for the surgery will have to alter their plans, my in-laws have to deal with me living in their house for longer, and I’ll need to push back my medical leave. But, as a lot of people I’ve talked to today have said, sometimes things happen that are out of your control. So, all I can do now is focus on feeling better so I’m healthy for the surgery, which is hopefully soon.
