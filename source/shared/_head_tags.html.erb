@@ -1,11 +1,13 @@
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-54790755-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<% if build? %>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-54790755-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-54790755-3');
-</script>
+    gtag('config', 'UA-54790755-3');
+  </script>
+<% end %>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
 <meta content='yes' name='apple-mobile-web-app-capable'>
