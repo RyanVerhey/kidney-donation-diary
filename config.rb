@@ -60,6 +60,16 @@ helpers do
       article.title.downcase.match title.downcase
     end
   end
+
+  def article_image_with_link_inner(image_path, image_alt = nil)
+    link_to image_path, target: '_blank' do
+      image_tag image_path, alt: image_alt
+    end
+  end
+
+  def article_image_with_link(image_path, alt: nil, caption: nil, float: :right)
+    partial 'shared/article_image_with_link', locals: { image_path: image_path, alt: alt, caption: caption, float: float }
+  end
 end
 
 # Build-specific configuration

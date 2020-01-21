@@ -1,0 +1,11 @@
+<%
+  float ||= :right
+  caption ||= nil
+  alt ||= nil
+%>
+<div class='image-wrapper <%= float %>'>
+  <%= article_image_with_link_inner(image_path, alt) %>
+  <% if caption %>
+    <span><%= caption %></span>
+  <% end %>
+</div>

@@ -97,11 +97,15 @@ a {
   // }
 }
 
-article img {
+article .image-wrapper {
   float: none;
   display: block;
   margin: 10px auto;
   width: 90%;
+
+  img {
+    width: 100%;
+  }
 }
 
 footer {
@@ -128,10 +132,24 @@ footer {
     }
   }
 
-  article img {
+  article .image-wrapper {
     width: 30%;
-    float: right;
     margin: 0 0 5px 5px;
+
+    span {
+      font-size: 9pt;
+      display: block;
+    }
+
+    &.right {
+      float: right;
+      text-align: right;
+    }
+
+    &.left {
+      float: left;
+      text-align: left;
+    }
   }
 }
 
