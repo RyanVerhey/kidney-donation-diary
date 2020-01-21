@@ -21,6 +21,7 @@ page '/*.txt', layout: false
 ###
 activate :directory_indexes
 set :relative_links, true
+activate :asset_hash
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
