@@ -134,21 +134,31 @@ footer {
 
   article .image-wrapper {
     width: 30%;
-    margin: 0 0 5px 5px;
+    margin: 0 0 5px 0;
 
     span {
-      font-size: 9pt;
+      font-size: 10pt;
       display: block;
     }
 
     &.right {
       float: right;
       text-align: right;
+      margin-left: 5px;
     }
 
     &.left {
       float: left;
       text-align: left;
+      margin-right: 10px;
+    }
+
+    &.none {
+      float: none;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      width: 70%;
     }
   }
 }
