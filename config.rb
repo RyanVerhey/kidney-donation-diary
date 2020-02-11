@@ -86,7 +86,7 @@ activate :deploy do |deploy|
   deploy.deploy_method   = :sftp
   deploy.host            = 'kidneydonationdiary.com'
   deploy.port            = 22
-  deploy.path            = '/home/kdd_user/kidneydonationdiary.com'
+  deploy.path            = "/home/#{ENV['KDD_DEPLOY_USER']}/kidneydonationdiary.com"
   deploy.user            = ENV['KDD_DEPLOY_USER']
   deploy.password        = ENV['KDD_DEPLOY_PASS']
 end
