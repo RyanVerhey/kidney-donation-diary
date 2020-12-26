@@ -71,6 +71,14 @@ helpers do
   def article_image_with_link(image_path, alt: nil, caption: nil, float: :right)
     partial 'shared/article_image_with_link', locals: { image_path: image_path, alt: alt, caption: caption, float: float }
   end
+
+  def published_articles
+    if app.environment == :production
+      blog.articles.select { |article| article.date <= Date.today }
+    else
+      blog.articles
+    end
+  end
 end
 
 # Build-specific configuration
