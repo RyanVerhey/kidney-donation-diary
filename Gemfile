@@ -19,3 +19,7 @@ gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 gem "builder", "~> 3.0"
 
 gem 'nokogiri'
+
+# Gems needed for middleman-deploy to deploy
+gem 'bcrypt_pbkdf'
+gem 'ed25519'
