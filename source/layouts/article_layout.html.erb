@@ -16,6 +16,6 @@
     <hr/>
     <h2>Recent Articles:</h2>
     <% recent_articles = published_articles.reject { |a| a == current_article }.first(3) %>
-    <%= partial 'shared/articles_list', locals: { articles: recent_articles, with_title: false } %>
+    <%= partial 'shared/articles_list', locals: { articles: recent_articles } %>
   </section>
 <% end %>

@@ -1,12 +1,4 @@
-<%
-  with_title = true unless defined?(with_title)
-  only_recent = false unless defined?(only_recent)
-%>
-
 <div id="articles-list">
-  <% if with_title %>
-    <h2>Entries:</h2>
-  <% end %>
   <% articles.each_with_index do |article, i| %>
     <%= partial 'shared/articles_list_item', locals: { article: article } %>
   <% end %>
