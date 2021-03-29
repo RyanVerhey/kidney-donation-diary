@@ -19,3 +19,5 @@
 
 # Ignoring Nova configs
 .nova
+
+vendor/*
