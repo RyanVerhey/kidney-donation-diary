@@ -13,7 +13,7 @@ gem "middleman", "~> 4.3"
 gem "middleman-blog"
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
-gem 'redcarpet', '~> 3.3', '>= 3.3.3'
+gem 'redcarpet', '~> 3.5'
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"
