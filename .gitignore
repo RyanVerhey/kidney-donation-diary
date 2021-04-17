@@ -21,3 +21,4 @@
 .nova
 
 vendor/*
+/*.code-workspace
