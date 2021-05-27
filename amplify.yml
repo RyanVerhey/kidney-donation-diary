@@ -3,8 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - bundle install
-        - bundle cache
+        - bundle install --deployment
     build:
       commands:
         - bundle exec middleman build
