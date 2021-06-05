@@ -26,7 +26,7 @@ const ImgWithCaption: React.FC<ImgWithCaptionProps> = ({
       <a href={image}>
         <img src={image} alt={altText} title={altText} />
       </a>
-      <figcaption>{altText}</figcaption>
+      <figcaption className="caption">{altText}</figcaption>
     </figure>
   );
 }

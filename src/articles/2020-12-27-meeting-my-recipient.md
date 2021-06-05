@@ -11,6 +11,8 @@ The first visit was really fun. When my recipient and her mom arrived, she gave 
 
 ![My Recipient and Me](recipient-and-me.jpeg)
 
+<br />
+
 ![Drawing my recipient made for me](awesome-drawing.jpeg)
 
 The second visit was fun as well! It went a lot like the first; we hung out in the backyard and chatted for a few hours. My recipient had even made us some delicious cookies! Since the transplant, Jill and I have been sending my recipient pictures of our cat Hank, since she’s a big animal lover. We brought him with us for both visits, but for the first one, he hid the whole time so my recipient couldn’t meet him. For the second visit, though, he was sitting in the window watching us in the backyard, so my recipient finally got to meet him (through the glass), and she was so excited. She even took some pictures with him. We took some more pictures together before they left. 

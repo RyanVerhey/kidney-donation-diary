@@ -3,3 +3,4 @@
 [ ] Add new title to article using React Helmet
 [ ] Manifest file?
 [ ] Moving items from <head> tags
+[ ] Use Gatsby's lazy image loading

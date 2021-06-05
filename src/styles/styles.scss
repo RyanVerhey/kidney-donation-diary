@@ -137,9 +137,10 @@ footer {
     width: 30%;
     margin: 0 0 5px 0;
 
-    span {
+    .caption {
       font-size: 10pt;
       display: block;
+      font-family: sans-serif;
     }
 
     &.right {
