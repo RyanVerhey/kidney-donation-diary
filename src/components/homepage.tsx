@@ -3,9 +3,6 @@ import { Link } from 'gatsby';
 import { iArticle } from '../interfaces';
 import ArticlesList from './articlesList/articlesList';
 import MainLayout from './layouts/layout';
-import '../../static/fonts/raleway.css'
-import '../styles/normalize.scss'
-import '../styles/styles.scss'
 import allArticles from "../hooks/allArticles";
 
 interface HomepageProps {
