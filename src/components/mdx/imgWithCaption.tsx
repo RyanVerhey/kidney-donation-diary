@@ -7,6 +7,7 @@ interface ImgWithCaptionProps {
 
 const defaultOptions = {
   "float": "none",
+  "caption": true,
 }
 
 const ImgWithCaption: React.FC<ImgWithCaptionProps> = ({
@@ -26,7 +27,7 @@ const ImgWithCaption: React.FC<ImgWithCaptionProps> = ({
       <a href={image}>
         <img src={image} alt={altText} title={altText} />
       </a>
-      <figcaption className="caption">{altText}</figcaption>
+      { options.caption && <figcaption className="caption">{altText}</figcaption> }
     </figure>
   );
 }
