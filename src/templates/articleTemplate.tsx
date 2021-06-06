@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Helmet from 'react-helmet';
 import { PageProps } from 'gatsby';
 import ArticleBody from '../components/articleBody';
 import MainLayout from '../components/layouts/layout';
@@ -23,6 +24,9 @@ const ArticleTemplate: React.FC<ArticleTemplateProps> = (props): JSX.Element => 
   } = props.pageContext;
   return (
     <MainLayout>
+      <Helmet>
+        <title>{article.frontmatter.title} - Kidney Donation Diary</title>
+      </Helmet>
       <article>
         <header id="article-header">
           <NextPrevArticleLinks
