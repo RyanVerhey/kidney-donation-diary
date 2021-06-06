@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import Footer from '../footer';
 import Top from '../top';
 
+import favicon from '../../images/favicon.png'
 import '../../../static/fonts/raleway.css';
 import '../../styles/normalize.scss';
 import '../../styles/styles.scss';
@@ -15,6 +16,7 @@ const MainLayout:React.FunctionComponent = (props) => {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
         <meta content='yes' name='apple-mobile-web-app-capable' />
         <meta name="theme-color" content="#800020" className="change-meta" />
+        <link href={favicon} rel="icon" type="image/png"></link>
         <title>Kidney Donation Diary</title>
       </Helmet>
       <Top />
