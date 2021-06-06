@@ -19,7 +19,7 @@ const ImgWithCaption: React.FC<ImgWithCaptionProps> = ({
     ...defaultOptions,
     ...parsedJsonOptions,
   };
-  const image = require(`../../images/${src}`).default;
+  const image = require(`images/${src}`).default;
 
   return (
     <figure className={"image-wrapper " + options["float"]}>

@@ -7,6 +7,14 @@ function generateArticleSlug(origSlug) {
   return `${year}${month}${day}-${slug}`;
 }
 
+function sortArticlesByDate(firstEl, secondEl) {
+  const firstElDate = new Date(firstEl.frontmatter.date).getTime();
+  const secondElDate = new Date(secondEl.frontmatter.date).getTime();
+
+  return firstElDate - secondElDate;
+}
+
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
   const articleTemplate = path.resolve(`src/templates/articleTemplate.tsx`)
@@ -30,7 +38,7 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
-    const articles = result.data.allMdx.articles;
+    const articles = result.data.allMdx.articles.sort(sortArticlesByDate);
     articles.forEach((article, index) => {
       const prevArticle = index === 0 ? null : articles[index - 1];
       const nextArticle = index === articles.length - 1 ? null : articles[index + 1];

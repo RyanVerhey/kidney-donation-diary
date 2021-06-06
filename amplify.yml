@@ -3,12 +3,12 @@ frontend:
   phases:
     preBuild:
       commands:
-        - yarn
+        - yarn install
     build:
       commands:
-        - yarn build
+        - yarn run build
   artifacts:
-    baseDirectory: /build
+    baseDirectory: public
     files:
       - '**/*'
   cache:

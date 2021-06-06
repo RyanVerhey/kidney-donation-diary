@@ -11,7 +11,10 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        name: "Kidney Donation Diary",
+        short_name: "Kidney Diary",
+        start_url: '/',
+        icon: "src/images/favicon.png",
       },
     },
     {
