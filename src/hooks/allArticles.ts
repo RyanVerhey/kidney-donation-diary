@@ -5,13 +5,14 @@ import sortArticlesByDate from "./sortArticlesByDate";
 export default function allArticles(): iArticle[] {
   return useStaticQuery(graphql`
     query ArticleListQuery {
-      allMdx(sort: { fields: slug, order: ASC }) {
+      allMdx(sort: { fields: frontmatter___date, order: ASC }) {
         articles:nodes {
           id
           slug
           frontmatter {
             date
             title
+            author
           }
           excerpt(pruneLength: 103)
         }
