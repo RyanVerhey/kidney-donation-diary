@@ -2,6 +2,7 @@ import * as React from 'react';
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import ImgWithCaption from './mdx/imgWithCaption';
+import LinkToArticle from './mdx/linkToArticle'
 
 interface ArticleBodyProps {
   body: string;
@@ -9,6 +10,7 @@ interface ArticleBodyProps {
 
 const components = {
   ImgWithCaption: ImgWithCaption,
+  LinkToArticle: LinkToArticle,
   img: ImgWithCaption,
 }
 
