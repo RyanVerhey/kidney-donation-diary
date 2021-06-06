@@ -39,9 +39,7 @@ exports.createPages = ({ graphql, actions }) => {
         path: generateArticleSlug(article.slug),
         component: articleTemplate,
         context: {
-          title: article.frontmatter.title,
-          date: article.frontmatter.date,
-          body: article.body,
+          article: article,
           prevArticle: prevArticle,
           nextArticle: nextArticle,
         }

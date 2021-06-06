@@ -7,9 +7,7 @@ import { iArticle } from '../interfaces';
 
 interface ArticleTemplateProps extends PageProps {
   pageContext: {
-    title: string;
-    date: string;
-    body: string;
+    article: iArticle;
     prevArticle: iArticle,
     nextArticle: iArticle,
   }
@@ -17,9 +15,7 @@ interface ArticleTemplateProps extends PageProps {
 
 const ArticleTemplate: React.FC<ArticleTemplateProps> = (props): JSX.Element => {
   const {
-    title,
-    date,
-    body,
+    article,
     prevArticle,
     nextArticle,
   } = props.pageContext;
