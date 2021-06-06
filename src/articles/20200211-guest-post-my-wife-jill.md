@@ -1,6 +1,7 @@
 ---
 title: "Guest Post: My Wife Jill"
 date: 2020-02-11
+author: Jill Hyman
 ---
 
 My name is Jill, and I am an organ donor’s caregiver/spouse.  I am honored and excited to be Ryan’s first guest blogger!

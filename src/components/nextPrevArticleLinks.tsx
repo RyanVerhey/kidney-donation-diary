@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import generateArticleSlug from '../hooks/generateArticleSlug';
 import { iArticle } from '../interfaces';
+import LinkToArticle from './mdx/linkToArticle';
 
 interface NextPrevArticleLinksProps {
   prevArticle: iArticle;
@@ -17,16 +17,12 @@ const NextPrevArticleLinks: React.FC<NextPrevArticleLinksProps> = ({
       &nbsp;
       {prevArticle && (
         <div className="left">
-          <Link
-            to={"/" + generateArticleSlug(prevArticle.slug)}
-          >&lt; Next Oldest Article</Link>
+          <LinkToArticle article={prevArticle}>&lt; Next Oldest Article</LinkToArticle>
         </div>
       )}
       {nextArticle && (
         <div className="right">
-          <Link
-            to={"/" + generateArticleSlug(nextArticle.slug)}
-          >Next Newest Article &gt;</Link>
+          <LinkToArticle article={nextArticle}>Next Newest Article &gt;</LinkToArticle>
         </div>
       )}
     </div>
@@ -34,17 +30,3 @@ const NextPrevArticleLinks: React.FC<NextPrevArticleLinksProps> = ({
 }
 
 export default NextPrevArticleLinks;
-
-{/* <div id="previous-next-article-links">
-  &nbsp;
-  <% if current_article != blog.articles.last %>
-    <div class="left">
-      <%= link_to "&lt; Next Oldest Article", current_article.article_previous %>
-    </div>
-  <% end %>
-  <% if current_article != blog.articles.first %>
-    <div class="right">
-      <%= link_to "Next Newest Article &gt;", current_article.article_next %>
-    </div>
-  <% end %>
-</div> */}

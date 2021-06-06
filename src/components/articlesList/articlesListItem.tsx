@@ -1,8 +1,8 @@
 import { Link } from '@reach/router';
 import * as React from 'react';
 import formatArticleDate from '../../hooks/formatArticleDate';
-import generateArticleSlug from '../../hooks/generateArticleSlug';
 import { iArticle } from '../../interfaces';
+import LinkToArticle from '../mdx/linkToArticle';
 
 interface ArticlesListItemProps {
   article: iArticle;
@@ -12,7 +12,7 @@ const ArticlesListItem = ({ article }: ArticlesListItemProps) => {
   return (
     <div className="article-list-item">
       <div className="article-title">
-        <h3><Link to={"/" + generateArticleSlug(article.slug)}>{article.frontmatter.title}</Link></h3>
+        <h3><LinkToArticle article={article}>{article.frontmatter.title}</LinkToArticle></h3>
         <span>{formatArticleDate(article.frontmatter.date)}</span>
       </div>
       <div className="article-summary">

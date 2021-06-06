@@ -1,12 +1,5 @@
 const path = require(`path`);
 
-// Repeating code from src/hooks/generateArticleSlug. Need to find a way to use that here, or vice-versa
-function generateArticleSlug(origSlug) {
-  const [, year, month, day, slug] = origSlug.match(/^(\d{4})-(\d{2})-(\d{2})-([\w-]+)/i);
-
-  return `${year}${month}${day}-${slug}`;
-}
-
 function sortArticlesByDate(firstEl, secondEl) {
   const firstElDate = new Date(firstEl.frontmatter.date).getTime();
   const secondElDate = new Date(secondEl.frontmatter.date).getTime();
@@ -44,7 +37,7 @@ exports.createPages = ({ graphql, actions }) => {
       const nextArticle = index === articles.length - 1 ? null : articles[index + 1];
 
       createPage({
-        path: generateArticleSlug(article.slug),
+        path: article.slug,
         component: articleTemplate,
         context: {
           article: article,
