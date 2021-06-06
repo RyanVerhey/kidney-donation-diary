@@ -4,6 +4,7 @@ import ArticleBody from '../components/articleBody';
 import MainLayout from '../components/layouts/layout';
 import NextPrevArticleLinks from '../components/nextPrevArticleLinks';
 import { iArticle } from '../interfaces';
+import formatArticleDate from '../hooks/formatArticleDate';
 
 interface ArticleTemplateProps extends PageProps {
   pageContext: {
@@ -19,7 +20,6 @@ const ArticleTemplate: React.FC<ArticleTemplateProps> = (props): JSX.Element => 
     prevArticle,
     nextArticle,
   } = props.pageContext;
-  const formattedDate = new Date(date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
   return (
     <MainLayout>
       <article>
@@ -28,10 +28,10 @@ const ArticleTemplate: React.FC<ArticleTemplateProps> = (props): JSX.Element => 
             prevArticle={prevArticle}
             nextArticle={nextArticle}
           />
-          <h1>{title}</h1>
-          <div className="date">{formattedDate}</div>
+          <h1>{article.frontmatter.title}</h1>
+          <div className="date">{formatArticleDate(article.frontmatter.date)}</div>
         </header>
-        <ArticleBody body={body} />
+        <ArticleBody body={article.body} />
       </article>
       <section>
         <NextPrevArticleLinks

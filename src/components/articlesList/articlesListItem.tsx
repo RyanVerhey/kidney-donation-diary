@@ -1,5 +1,6 @@
 import { Link } from '@reach/router';
 import * as React from 'react';
+import formatArticleDate from '../../hooks/formatArticleDate';
 import generateArticleSlug from '../../hooks/generateArticleSlug';
 import { iArticle } from '../../interfaces';
 
@@ -8,12 +9,11 @@ interface ArticlesListItemProps {
 }
 
 const ArticlesListItem = ({ article }: ArticlesListItemProps) => {
-  const formattedDate = new Date(article.frontmatter.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
   return (
     <div className="article-list-item">
       <div className="article-title">
         <h3><Link to={"/" + generateArticleSlug(article.slug)}>{article.frontmatter.title}</Link></h3>
-        <span>{formattedDate}</span>
+        <span>{formatArticleDate(article.frontmatter.date)}</span>
       </div>
       <div className="article-summary">
         <p>
