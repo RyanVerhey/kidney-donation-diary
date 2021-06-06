@@ -1,5 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby";
 import { iArticle } from "../interfaces";
+import sortArticlesByDate from "./sortArticlesByDate";
 
 export default function allArticles(): iArticle[] {
   return useStaticQuery(graphql`
@@ -16,5 +17,5 @@ export default function allArticles(): iArticle[] {
         }
       }
     }
-  `).allMdx.articles;
+  `).allMdx.articles.sort(sortArticlesByDate);
 }

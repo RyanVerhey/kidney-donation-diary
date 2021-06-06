@@ -12,16 +12,6 @@ interface HomepageProps {
   chronological?: boolean;
 }
 
-const sortArticlesByDate = (firstEl, secondEl) => {
-  if (firstEl.frontmatter.date < secondEl.frontmatter.date) {
-    return 1;
-  }
-  if (firstEl.frontmatter.date > secondEl.frontmatter.date) {
-    return -1;
-  }
-  return 0;
-}
-
 const Homepage: React.FC<HomepageProps> = ({ chronological = false }) => {
   let articles: iArticle[] = allArticles();
 
@@ -30,13 +20,11 @@ const Homepage: React.FC<HomepageProps> = ({ chronological = false }) => {
   if (chronological) {
     buttonText = "Click here to view entries in the order they were published.";
     buttonLink = "/";
-
-    articles = articles.sort(sortArticlesByDate).reverse();
   } else {
     buttonText = "Click here to view entries in chronological order.";
     buttonLink = "/chronological";
 
-    articles = articles.sort(sortArticlesByDate);
+    articles = articles.reverse();
   }
 
   return (
