@@ -4,6 +4,7 @@ import ArticleBody from '../components/articleBody';
 import MainLayout from '../components/layouts/layout';
 import NextPrevArticleLinks from '../components/nextPrevArticleLinks';
 import { iArticle } from '../interfaces';
+import RecentArticlesSection from '../components/articlesList/recentArticlesSection';
 import formatArticleDate from '../hooks/formatArticleDate';
 
 interface ArticleTemplateProps extends PageProps {
@@ -39,11 +40,7 @@ const ArticleTemplate: React.FC<ArticleTemplateProps> = (props): JSX.Element => 
           nextArticle={nextArticle}
         />
       </section>
-      <section>
-        <hr />
-        <h2>Recent Articles:</h2>
-        {/* Show article list of 3 most recent EXCEPT current */}
-      </section>
+      <RecentArticlesSection except={article} />
     </MainLayout>
   )
 }
