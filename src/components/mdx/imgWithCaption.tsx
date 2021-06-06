@@ -25,6 +25,7 @@ const ImgWithCaption: React.FC<ImgWithCaptionProps> = ({
   return (
     <figure className={"image-wrapper " + options["float"]}>
       <a href={image}>
+        {/* Use GatsbyImage, can query "allImageSharp" to get graphql image data. Pass that object into GatsbyImage */}
         <img src={image} alt={altText} title={altText} />
       </a>
       { options.caption && <figcaption className="caption">{altText}</figcaption> }
