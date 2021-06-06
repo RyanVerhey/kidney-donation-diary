@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
     title: "kidney-donation-diary",
@@ -51,6 +53,12 @@ module.exports = {
         path: "./static/fonts/",
       },
       __key: "fonts",
+    },
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        images: path.join(__dirname, 'src/images'),
+      }
     },
   ],
 };
