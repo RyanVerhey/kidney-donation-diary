@@ -8,11 +8,12 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "develop": "yarn clean && yarn start",
+    "start": "GATSBY_ACTIVE_ENV=development gatsby develop",
+    "build": "GATSBY_ACTIVE_ENV=production gatsby build",
+    "serve": "GATSBY_ACTIVE_ENV=production gatsby serve",
+    "clean": "gatsby clean",
+    "deploy_build": "gatsby build"
   },
   "dependencies": {
     "@babel/register": "^7.13.16",

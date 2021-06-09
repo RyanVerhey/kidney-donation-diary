@@ -1,6 +1,7 @@
 ---
 title: Introduction
 date: 2019-10-21
+draft: false
 ---
 
 Hello! My name is Ryan, and I've decided to donate one of my kidneys. Since this is a pretty big thing to go through, I've decided to document my journey to inform people about what it's like to go through the process of being a kidney donor, and maybe even inspire a few people to do it themselves.

@@ -6,4 +6,4 @@
 [X] Use RSS feed?
 [X] Use Gatsby's lazy image loading
 [X] Add Byline for articles with an author
-[ ] Only show articles with frontmatter `draft: false` or without draft option
+[X] Only show articles with frontmatter `draft: false` or without draft option

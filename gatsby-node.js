@@ -1,29 +1,32 @@
 const path = require(`path`);
 
-function sortArticlesByDate(firstEl, secondEl) {
-  const firstElDate = new Date(firstEl.frontmatter.date).getTime();
-  const secondElDate = new Date(secondEl.frontmatter.date).getTime();
-
-  return firstElDate - secondElDate;
-}
-
-
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
   const articleTemplate = path.resolve(`src/templates/articleTemplate.tsx`)
 
   return graphql(`
     query BuildArticlesQuery {
-      allMdx {
-        articles:nodes {
-          id
-          slug
-          frontmatter {
-            date
-            title
-            author
+      allMdx(
+        sort: { fields: frontmatter___date, order: ASC }
+        filter: { frontmatter: { draft: { ne: true } } }
+      ) {
+        edges {
+          article:node {
+            slug
+            frontmatter {
+              date
+              title
+              author
+              draft
+            }
+            body
           }
-          body
+          nextArticle:next {
+            slug
+          }
+          prevArticle:previous {
+            slug
+          }
         }
       }
     }
@@ -32,11 +35,7 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
-    const articles = result.data.allMdx.articles.sort(sortArticlesByDate);
-    articles.forEach((article, index) => {
-      const prevArticle = index === 0 ? null : articles[index - 1];
-      const nextArticle = index === articles.length - 1 ? null : articles[index + 1];
-
+    result.data.allMdx.edges.forEach(({ article, nextArticle, prevArticle }) => {
       createPage({
         path: article.slug,
         component: articleTemplate,
@@ -45,7 +44,7 @@ exports.createPages = ({ graphql, actions }) => {
           prevArticle: prevArticle,
           nextArticle: nextArticle,
         }
-      })
+      });
     })
   })
 }
