@@ -1,5 +1,5 @@
 import * as React from 'react';
-import allArticles from '../../hooks/allArticles';
+import getAllArticles from '../../hooks/getAllArticles';
 import { iArticle } from '../../interfaces';
 import ArticlesList from './articlesList';
 
@@ -8,7 +8,7 @@ interface RecentArticlesSectionProps {
 }
 
 const RecentArticlesSection: React.FC<RecentArticlesSectionProps> = ({ except }) => {
-  let articles: iArticle[] = allArticles().reverse();
+  let articles: iArticle[] = getAllArticles().reverse();
   if (except) {
     articles = articles.filter(article => {
       return article.slug !== except.slug;

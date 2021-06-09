@@ -3,14 +3,14 @@ import { Link } from 'gatsby';
 import { iArticle } from '../interfaces';
 import ArticlesList from './articlesList/articlesList';
 import MainLayout from './layouts/layout';
-import allArticles from "../hooks/allArticles";
+import getAllArticles from "../hooks/getAllArticles";
 
 interface HomepageProps {
   chronological?: boolean;
 }
 
 const Homepage: React.FC<HomepageProps> = ({ chronological = false }) => {
-  let articles: iArticle[] = allArticles();
+  let articles: iArticle[] = getAllArticles();
 
   let buttonText: string;
   let buttonLink: string;
