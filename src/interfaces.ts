@@ -3,7 +3,7 @@ import { IGatsbyImageData } from "gatsby-plugin-image";
 export interface iArticle {
   id: string;
   slug: string;
-  frontmatter: { date: string; title: string; author: string | null; };
+  frontmatter: { date: string; title: string; author?: string; };
   body?: string;
   excerpt?: string;
 }

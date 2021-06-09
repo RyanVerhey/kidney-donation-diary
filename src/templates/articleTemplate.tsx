@@ -35,6 +35,7 @@ const ArticleTemplate: React.FC<ArticleTemplateProps> = (props): JSX.Element => 
           />
           <h1>{article.frontmatter.title}</h1>
           <div className="date">{formatArticleDate(article.frontmatter.date)}</div>
+          {article.frontmatter.author && <div className="byline">By {article.frontmatter.author}</div>}
         </header>
         <ArticleBody body={article.body} />
       </article>
