@@ -4,5 +4,6 @@
 [X] Manifest file?
 [X] Moving items from <head> tags
 [X] Use RSS feed?
-[ ] Use Gatsby's lazy image loading
+[X] Use Gatsby's lazy image loading
 [ ] Add Byline for articles with an author
+[ ] Only show articles with frontmatter `draft: false` or without draft option

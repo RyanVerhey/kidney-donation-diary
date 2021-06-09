@@ -1,4 +1,7 @@
 import * as React from 'react';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import getGatsbyImageData from '../../hooks/getGatsbyImageData';
+import { CustomImageData } from '../../interfaces';
 
 interface ImgWithCaptionProps {
   src: string;
@@ -20,13 +23,16 @@ const ImgWithCaption: React.FC<ImgWithCaptionProps> = ({
     ...defaultOptions,
     ...parsedJsonOptions,
   };
-  const image = require(`images/${src}`).default;
+  const image: CustomImageData = getGatsbyImageData(src);
 
   return (
     <figure className={"image-wrapper " + options["float"]}>
-      <a href={image}>
-        {/* Use GatsbyImage, can query "allImageSharp" to get graphql image data. Pass that object into GatsbyImage */}
-        <img src={image} alt={altText} title={altText} />
+      <a href={image.src} target="_blank">
+        <GatsbyImage
+          image={image.gatsbyImageData}
+          alt={altText}
+          title={altText}
+        />
       </a>
       { options.caption && <figcaption className="caption">{altText}</figcaption> }
     </figure>
