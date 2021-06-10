@@ -1,17 +1,16 @@
-version: 1
+version: 2
 frontend:
   phases:
     preBuild:
       commands:
-        - bundle install
-        - bundle cache
+        - yarn install
     build:
       commands:
-        - bundle exec middleman build
+        - yarn run deploy_build
   artifacts:
-    baseDirectory: /build
+    baseDirectory: public
     files:
       - '**/*'
   cache:
     paths:
-      - vendor/**/*
+      - node_modules/**/*

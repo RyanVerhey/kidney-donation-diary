@@ -1,0 +1,201 @@
+$background-color: #FFF;
+$burgundy: #800020;
+$lighter-burgundy: #bb002f;
+$darker-burgundy: #450011;
+$even-lighter-burgundy: #db0037;
+
+$link-color: $lighter-burgundy;
+$visited-link-color: $darker-burgundy;
+
+body {
+  padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Raleway, sans-serif;
+}
+
+header#page-header {
+  #logo {
+    #left-kidney {
+      fill: $burgundy;
+    }
+
+    svg {
+      fill: #000;
+    }
+  }
+}
+
+header#article-header {
+  font-family: Raleway, sans-serif;
+  h1 {
+    margin: 0;
+  }
+  .date {
+    font-weight: bold;
+  }
+
+  #previous-next-article-links {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+main {
+  hr {
+    margin: 20px 0;
+  }
+}
+
+p {
+  font-size: 12pt;
+  font-family: Georgia, serif;
+}
+
+a {
+  color: $link-color;
+
+  &:visited {
+    color: $visited-link-color;
+  }
+
+  &.chronological-link:visited {
+    color: $link-color;
+  }
+}
+
+.article-list-item {
+  hr {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &:last-child hr {
+    display: none;
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  .article-title {
+    font-family: Raleway, sans-serif;
+  }
+
+  // .article-summary {
+  //   position: relative;
+  //   .gradient {
+  //     position: absolute;
+  //     height: 100%; width: 100%;
+  //     top: 0; left: 0;
+  //     z-index: 100;
+  //     background: rgb(255,255,255);
+  //     background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%);
+  //   }
+  // }
+}
+
+article .image-wrapper {
+  float: none;
+  display: block;
+  margin: 10px auto;
+  width: 90%;
+  text-align: center;
+
+  img {
+    width: 100%;
+  }
+}
+
+footer {
+  font-family: Georgia, serif;
+
+  section {
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 600px;
+    margin: 10px auto 0 auto;
+  }
+
+  header#page-header {
+    #logo {
+      height: 50px;
+
+      svg {
+        height: 100%;
+      }
+    }
+  }
+
+  article .image-wrapper {
+    width: 30%;
+    margin: 0 0 5px 0;
+
+    .caption {
+      font-size: 10pt;
+      display: block;
+      font-family: sans-serif;
+    }
+
+    &.right {
+      float: right;
+      text-align: right;
+      margin-left: 5px;
+    }
+
+    &.left {
+      float: left;
+      text-align: left;
+      margin-right: 10px;
+    }
+
+    &.none {
+      float: none;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      width: 70%;
+    }
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+@media (prefers-color-scheme: dark) {
+  $link-color: $even-lighter-burgundy;
+  $visited-link-color: $lighter-burgundy;
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  main a, footer a {
+    color: $link-color;
+    font-weight: bold;
+    &:visited {
+      color: $visited-link-color;
+    }
+
+    &.chronological-link:visited {
+      color: $link-color;
+    }
+  }
+
+  svg {
+    #kidney-donation-diary {
+      fill: white;
+    }
+  }
+}
