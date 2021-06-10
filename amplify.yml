@@ -6,9 +6,7 @@ frontend:
         - yarn install
     build:
       commands:
-        - yarn run deploy_build
   artifacts:
-    baseDirectory: public
     files:
       - '**/*'
   cache:
