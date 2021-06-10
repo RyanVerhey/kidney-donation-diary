@@ -3,14 +3,12 @@ frontend:
   phases:
     preBuild:
       commands:
-        - bundle install --deployment
+        - yarn install
     build:
       commands:
-        - bundle exec middleman build
   artifacts:
-    baseDirectory: /build
     files:
       - '**/*'
   cache:
     paths:
-      - vendor/**/*
+      - node_modules/**/*
