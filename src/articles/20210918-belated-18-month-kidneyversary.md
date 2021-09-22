@@ -4,7 +4,7 @@ date: 2021-09-18
 ---
 
 
-Hello everyone! I'm sorry it's been so long since the last update. Since my last update in April, not a lot has happened health-wise for me. My recipient and I have hung out a few times, both virtually playing Rocket League or Animal Crossing, and in person (with my wife and her mom), but the biggest news is that my wife and I were invited to celebrate my recipient's and my 18 month kidneyversary at their house in July.
+Hello everyone! I'm sorry it's been so long since the last update. Since my last update in April, not a lot has happened health-wise for me. My recipient and I have hung out a few times, both virtually playing Rocket League or Animal Crossing, and in person (with my wife and her mom), and my recipient celebrated her 13th birthday, but the biggest news is that my wife and I were invited to celebrate my recipient's and my 18 month kidneyversary at their house in July.
 
 It was so much fun! Everyone was vaccinated, so we were all able to hang out maskless which was nice, and it was so much fun! We spent all day at their house, swimming in their pool and having fun. It was also nice to spend some time with her siblings, who we had only met once briefly before then. My recipient's dad grilled hot dogs and chicken for lunch, and the highlight was dessert: my recipient made a _HUGE_ cake, the first cake she had ever made! It was a pineapple cake with coconut frosting, and it was absolutely delicious! I was so impressed by her cake, it was fantastic for her first time making one!
 
