@@ -11,6 +11,7 @@ export default function imgDataFromName(name: string): iImageData {
   })[0];
 
   imageData.src = `${cdn.host}/${cdn.imageDir}/${imageData.name}.${imageData.format}`;
+  imageData.smallSrc = `${cdn.host}/${cdn.smallImageDir}/${imageData.name}.${imageData.format}`;
 
   return imageData;
 }

@@ -25,9 +25,11 @@ export interface iImageData {
   height: number;
   format: string;
   src?: string;
+  smallSrc?: string;
 }
 
 export interface CdnOptions {
   host: string;
   imageDir: string;
+  smallImageDir: string;
 }

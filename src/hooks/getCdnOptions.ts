@@ -9,6 +9,7 @@ export default function getCdnOptions(): CdnOptions {
           cdnOptions {
             host
             imageDir
+            smallImageDir
           }
         }
       }

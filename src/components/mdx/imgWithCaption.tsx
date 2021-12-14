@@ -42,14 +42,11 @@ const ImgWithCaption: React.FC<ImgWithCaptionProps> = ({
     const img = new Image();
     img.src = imageData.src;
     img.addEventListener("load", onImageLoad, { once: true });
-
-    // return () => {
-    //   img.removeEventListener("load", onImageLoad);
-    // };
   }, [src, alt, onImageLoad]);
 
   const loadingStyles = {
-    paddingTop: `${((imageData.height / imageData.width) * 100).toFixed(2)}%`
+    paddingTop: `${((imageData.height / imageData.width) * 100).toFixed(2)}%`,
+    backgroundImage: `url('${imageData.smallSrc}')`,
   }
 
   return (

@@ -9,6 +9,7 @@ module.exports = {
     cdnOptions: {
       host: "https://cdn.kidneydonationdiary.com",
       imageDir: "images",
+      smallImageDir: "images/small"
     }
   },
   plugins: [

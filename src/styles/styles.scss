@@ -106,9 +106,12 @@ article .image-wrapper {
 
   img {
     width: 100%;
+    transition: filter 0.5s;
 
     &.loading {
-      background-color: gray;
+      filter: blur(8px);
+      background-size: cover;
+      // background-color: gray;
     }
   }
 }
