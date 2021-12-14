@@ -1,6 +1,6 @@
 ---
 title: Fall Update
-date: 2021-12-15
+date: 2021-12-14
 ---
 
 Hello! I hope everyone had a good Thanksgiving, and is having a good start to the holiday season. I've got a couple updates I wanted to share, so I'll jump right in.
