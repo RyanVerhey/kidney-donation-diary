@@ -244,5 +244,41 @@
     "width": 480,
     "height": 640,
     "format": "jpg"
+  },
+  {
+    "name": "playing-pokemon-go",
+    "width": 3024,
+    "height": 4032,
+    "format": "jpeg"
+  },
+  {
+    "name": "s2000",
+    "width": 3996,
+    "height": 1632,
+    "format": "jpeg"
+  },
+  {
+    "name": "treats",
+    "width": 3024,
+    "height": 4032,
+    "format": "jpeg"
+  },
+  {
+    "name": "us-and-earnie",
+    "width": 3024,
+    "height": 4032,
+    "format": "jpeg"
+  },
+  {
+    "name": "us-at-equestrian-center",
+    "width": 3024,
+    "height": 4032,
+    "format": "jpeg"
+  },
+  {
+    "name": "us-outside-house",
+    "width": 1181,
+    "height": 732,
+    "format": "jpeg"
   }
 ]
