@@ -18,3 +18,18 @@ export interface CustomImageData {
   name: string;
   src: string;
 }
+
+export interface iImageData {
+  name: string;
+  width: number;
+  height: number;
+  format: string;
+  src?: string;
+  smallSrc?: string;
+}
+
+export interface CdnOptions {
+  host: string;
+  imageDir: string;
+  smallImageDir: string;
+}

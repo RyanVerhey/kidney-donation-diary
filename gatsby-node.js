@@ -8,7 +8,6 @@ exports.createPages = ({ graphql, actions }) => {
     query BuildArticlesQuery {
       allMdx(
         sort: { fields: frontmatter___date, order: ASC }
-        filter: { frontmatter: { draft: { ne: true } } }
       ) {
         edges {
           article:node {
@@ -36,6 +35,9 @@ exports.createPages = ({ graphql, actions }) => {
     }
 
     result.data.allMdx.edges.forEach(({ article, nextArticle, prevArticle }) => {
+      const production = process.env.GATSBY_ACTIVE_ENV === 'production'
+      if (article.frontmatter.draft && production) return;
+
       createPage({
         path: article.slug,
         component: articleTemplate,

@@ -3,8 +3,7 @@ title: Finished the First Follow-Up Appointment
 date: 2020-01-27
 ---
 import { Link } from 'gatsby';
-import suturesAfterSurgery from 'images/sutures_after_surgery.jpg';
-import suturesAfterFirstAppointment from 'images/sutures_after_first_appointment.jpg';
+import getImageDataFromName from '../hooks/imgDataFromName';
 
 I went to my first post-surgery follow-up appointment this morning. It was in the same beautiful building as all my pre-surgery appointments. After I checked in, I was brought back and had my vital signs checked, and everything looked normal. I was then brought to an exam room to have my incisions looked at.
 
@@ -16,4 +15,4 @@ As far as my recovery goes, my coordinator said I’m right where she wants me t
 
 We also talked to the coordinator about the car ride we took to Wilmington. We mentioned we had our room in the Transplant House until February 1, so she suggested we stay through that date so that I was as healed as possible before making the long car journey home. Thus, we will leave here on February 1. As excited as I am to go home, it’s not such a bad thing since the transplant house is such a nice place to be.
 
-If you’re interested, <Link to={suturesAfterSurgery} target="_blank">click here for a picture of my incisions right after surgery</Link> (with the clear band-aids) and <Link to={suturesAfterFirstAppointment} target="_blank">click here for a picture from today</Link>. They’re not bloody, but just in case, you should not view them if you are squeamish.
+If you’re interested, <Link to={getImageDataFromName('sutures_after_surgery').src} target="_blank">click here for a picture of my incisions right after surgery</Link> (with the clear band-aids) and <Link to={getImageDataFromName('sutures_after_first_appointment').src} target="_blank">click here for a picture from today</Link>. They’re not bloody, but just in case, you should not view them if you are squeamish.
