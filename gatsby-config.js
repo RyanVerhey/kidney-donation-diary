@@ -50,7 +50,10 @@ module.exports = {
             },
             query: `
               {
-                allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+                allMdx(
+                  sort: { fields: [frontmatter___date], order: DESC }
+                  filter: { frontmatter: { draft: { ne: true } } }
+                ) {
                   articles:nodes {
                     id
                     slug
