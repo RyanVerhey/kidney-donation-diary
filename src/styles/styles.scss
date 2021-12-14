@@ -106,6 +106,10 @@ article .image-wrapper {
 
   img {
     width: 100%;
+
+    &.loading {
+      background-color: gray;
+    }
   }
 }
 

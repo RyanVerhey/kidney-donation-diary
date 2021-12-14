@@ -5,7 +5,11 @@ module.exports = {
     title: "kidney-donation-diary",
     siteUrl: "https://kidneydonationdiary.com",
     description: "Hi, I'm Ryan, and I gave one of my kidneys away. Please join me on my organ donation journey.",
-    blogAuthor: "Ryan Verhey"
+    blogAuthor: "Ryan Verhey",
+    cdnOptions: {
+      host: "https://cdn.kidneydonationdiary.com",
+      imageDir: "images",
+    }
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -104,14 +108,6 @@ module.exports = {
         path: "./src/articles/",
       },
       __key: "articles",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "fonts",
-        path: "./static/fonts/",
-      },
-      __key: "fonts",
     },
     {
       resolve: 'gatsby-plugin-root-import',

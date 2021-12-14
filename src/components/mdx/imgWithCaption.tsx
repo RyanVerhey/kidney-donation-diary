@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { GatsbyImage } from 'gatsby-plugin-image';
 import getGatsbyImageData from '../../hooks/getGatsbyImageData';
-import { CustomImageData } from '../../interfaces';
+import getImageDataFromName from '../../hooks/imgDataFromName';
+import { CustomImageData, iImageData } from '../../interfaces';
+import jsonImageData from "../../data/images.json";
 
 interface ImgWithCaptionProps {
   src: string;
@@ -17,21 +18,49 @@ const ImgWithCaption: React.FC<ImgWithCaptionProps> = ({
   src,
   alt,
 }) => {
+  const [imgSrc, setSrc] = React.useState<string>("");
+  const [imgAlt, setAlt] = React.useState<string>("");
+  const [loading, setLoading] = React.useState<boolean>(true);
   const [altText, jsonOptions] = alt.split("|");
+  const imagesData: iImageData[] = jsonImageData;
   const parsedJsonOptions = jsonOptions ? JSON.parse(jsonOptions) : {};
   const options = {
     ...defaultOptions,
     ...parsedJsonOptions,
   };
-  const image: CustomImageData = getGatsbyImageData(src);
+
+  const imageData: iImageData = getImageDataFromName(src);
+
+  const onImageLoad = React.useCallback(() => {
+    setSrc(imageData.src);
+    setAlt(altText);
+    setLoading(false);
+  }, [src, alt])
+
+  React.useEffect(() => {
+    // When image loads, set the src and the browser will load the cached version
+    const img = new Image();
+    img.src = imageData.src;
+    img.addEventListener("load", onImageLoad, { once: true });
+
+    // return () => {
+    //   img.removeEventListener("load", onImageLoad);
+    // };
+  }, [src, alt, onImageLoad]);
+
+  const loadingStyles = {
+    paddingTop: `${((imageData.height / imageData.width) * 100).toFixed(2)}%`
+  }
 
   return (
-    <figure className={"image-wrapper " + options["float"]}>
-      <a href={image.src} target="_blank">
-        <GatsbyImage
-          image={image.gatsbyImageData}
-          alt={altText}
-          title={altText}
+    <figure className={`image-wrapper ${options["float"]} ${!imgSrc ? 'placeholder' : ''}`}>
+      <a href={imageData.src} target="_blank">
+        <img
+          className={loading ? "loading" : ""}
+          src={imgSrc}
+          alt={imgAlt}
+          title={imgAlt}
+          style={loading ? loadingStyles : {}}
         />
       </a>
       { options.caption && <figcaption className="caption">{altText}</figcaption> }
