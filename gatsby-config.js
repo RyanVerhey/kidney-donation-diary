@@ -51,12 +51,11 @@ module.exports = {
             query: `
               {
                 allMdx(
-                  sort: { fields: [frontmatter___date], order: DESC }
-                  filter: { frontmatter: { draft: { ne: true } } }
+                  sort: {frontmatter: {date: DESC}}
+                  filter: {frontmatter: {draft: {ne: true}}}
                 ) {
                   articles:nodes {
                     id
-                    slug
                     excerpt(pruneLength: 103)
                     frontmatter {
                       date
