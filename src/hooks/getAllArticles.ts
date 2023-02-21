@@ -14,7 +14,6 @@ export default function getAllArticles(): iArticle[] {
             title
             author
             draft
-            slug
           }
           excerpt(pruneLength: 103)
         }
