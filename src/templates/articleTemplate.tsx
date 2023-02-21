@@ -13,7 +13,8 @@ interface ArticleTemplateProps extends PageProps {
     article: iArticle;
     prevArticle: iArticle,
     nextArticle: iArticle,
-  }
+  },
+  children: any;
 }
 
 const ArticleTemplate: React.FC<ArticleTemplateProps> = (props): JSX.Element => {
@@ -22,6 +23,7 @@ const ArticleTemplate: React.FC<ArticleTemplateProps> = (props): JSX.Element => 
     prevArticle,
     nextArticle,
   } = props.pageContext;
+  const { children } = props;
   return (
     <MainLayout>
       <Helmet>
@@ -37,7 +39,9 @@ const ArticleTemplate: React.FC<ArticleTemplateProps> = (props): JSX.Element => 
           <div className="date">{formatArticleDate(article.frontmatter.date)}</div>
           {article.frontmatter.author && <div className="byline">By {article.frontmatter.author}</div>}
         </header>
-        <ArticleBody body={article.body} />
+        <ArticleBody>
+          {children}
+        </ArticleBody>
       </article>
       <section>
         <NextPrevArticleLinks

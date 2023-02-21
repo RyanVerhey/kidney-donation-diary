@@ -1,23 +1,22 @@
 import * as React from 'react';
 import { MDXProvider } from "@mdx-js/react"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 import ImgWithCaption from './mdx/imgWithCaption';
 import LinkToArticle from './mdx/linkToArticle'
 
 interface ArticleBodyProps {
-  body: string;
+  children: any
 }
 
 const components = {
-  ImgWithCaption: ImgWithCaption,
-  LinkToArticle: LinkToArticle,
+  ImgWithCaption,
+  LinkToArticle,
   img: ImgWithCaption,
 }
 
-const ArticleBody: React.FC<ArticleBodyProps> = ({ body }) => {
+const ArticleBody: React.FC<ArticleBodyProps> = ({children}) => {
   return (
     <MDXProvider components={components}>
-      <MDXRenderer>{body}</MDXRenderer>
+      {children}
     </MDXProvider>
   );
 }
