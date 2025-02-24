@@ -21,7 +21,7 @@
     "@mdx-js/react": "^2.3.0",
     "@sindresorhus/slugify": "^1.1.2",
     "@types/react-helmet": "^6.1.1",
-    "gatsby": "^5.13.0",
+    "gatsby": "^5.14.1",
     "gatsby-image": "^3.6.0",
     "gatsby-link": "^5.7.0",
     "gatsby-plugin-feed": "^5.7.0",
