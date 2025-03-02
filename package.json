@@ -52,6 +52,9 @@
     "gatsby": {
       "path-to-regexp": "^0.1.12",
       "cookie": "^0.7.1"
+    },
+    "engine.io": {
+      "cookie": "^0.7.1"
     }
   }
 }
