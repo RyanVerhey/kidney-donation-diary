@@ -48,6 +48,9 @@
     },
     "axios": "^0.28.0",
     "webpack-dev-middleware": "^5.3.0",
-    "postcss": "^8.4.0"
+    "postcss": "^8.4.0",
+    "gatsby": {
+      "path-to-regexp": "^0.1.12"
+    }
   }
 }
